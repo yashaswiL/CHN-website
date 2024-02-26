@@ -1,14 +1,15 @@
 project:
   type: website
-  output-dir: docs
+  output-dir: _site
   
 website:
-  title: "MY WEB SITE"
+  title: "Chicago Health Networks Project"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - projects.qmd
+      - text: "Our Team"
+        file: Ourteam.qmd
     tools:
       - icon: twitter
         href: https://twitter.com/
@@ -16,12 +17,11 @@ website:
         href: https://github.com/YOURUSERNAME/YOURREPO
   page-footer:
     right: "Built with [Quarto](https://quarto.org/)"
-    left: "&copy; Copyright 2023, YOUR NAME"
+    left: "&copy; Copyright 2024"
 
 format:
   html:
-    theme: cerulean
+    theme: flatly
     toc: true
-
-editor: source
+    toc-depth: 2
 
